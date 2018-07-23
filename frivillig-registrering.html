@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Teko:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="/css/master.css">
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAK8Ho6QzP5AII_lmLLs5lNXX2bTwrd_LI",
+        authDomain: "gaulan-datatreff.firebaseapp.com",
+        databaseURL: "https://gaulan-datatreff.firebaseio.com",
+        projectId: "gaulan-datatreff",
+        storageBucket: "",
+        messagingSenderId: "908179500696"
+      };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img src="img/logo.png" alt="" width="40%" class="d-block mx-auto">
+          <h1>Registrer deg som frivillig:</h1>
+          <hr class="white-hr">
+          <form class="register-form">
+            <p>
+            <label for="firstname">Fornavn:</label>
+            <input class="form-control" type="text" name="firstname" value="" placeholder="Fornavn">
+            </p>
+            <p>
+            <label for="lastname">Etternavn:</label>
+            <input class="form-control" type="text" name="lastname" value="" placeholder="Etternavn">
+            </p>
+            <p>
+            <label for="email">E-post:</label>
+            <input class="form-control" type="text" name="email" value="" placeholder="E-post">
+            </p>
+            <p>
+            <label for="phone">Telefon:</label>
+            <input class="form-control" type="text" name="phone" value="" placeholder="Telefon">
+            </p>
+            <p>
+            <label for="address">Adresse:</label>
+            <input class="form-control" type="text" name="address" value="" placeholder="Adresse">
+            </p>
+            <p>
+            <label for="zipcode">Postnummer:</label>
+            <input class="form-control" type="text" name="zipcode" value="" placeholder="Postnummer">
+            </p>
+            <p>
+            <label for="city">Poststed:</label>
+            <input class="form-control" type="text" name="city" value="" placeholder="Poststed">
+            </p>
+            <p>
+            <button type="button" name="button" class="btn btn-success" onclick="register()">Registrer</button>
+            </p>
+
+
+          </form>
+        </div>
+      </div>
+      <br>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+  </body>
+</html>

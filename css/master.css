@@ -1,0 +1,13 @@
+body {
+  background-color: black;
+  color: #ddd;
+}
+
+
+.white-hr {
+  border-color: white;
+}
+
+.register-form {
+  width: 40%;
+}
